@@ -1,0 +1,26 @@
+Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
+
+How would you describe acessibility on the web to someone new to programming? 
+
+When websites are correctly coded and designed people with disabilities can use them easily. Also there are International web standards and laws that define what is needed for accessibility .
+
+
+
+Talk about 3 different things you can do to ensure your website is accessible.
+Make sure pictures are using alt to distribe pictures.
+Ensure color contrasts are accurate
+Buttons should have name, value, and discriptive naming
+
+How would you explain the concept of a variable to someone new to programming? 
+
+Think of veriables as drawers that are arrangesd inside your computer. Each drawer can hold specific type of value (int, array,string,obj). same way your home drawer can hold (one for your socks , book collections, jewels ..etc)
+
+What is the purpose of using functions in code?
+
+The first reason is that they can be used to avoid repetition of commands within the program.
+The second reason for careful use of functions and procedures is to help define a logical structure for your program by breaking it down into a number of smaller modules with obvious purposes. 
+
+
+
+
+You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.

@@ -234,7 +234,8 @@ console.log(fix(artists, 8, 'Vincent Van Gogh'));
 */
 function getArtistByIndex(array, index) {
   return `The artist ${array[index].id} is ${array[index].name}`;
-  }console.log(getArtistByIndex(artists,0));
+  }
+  console.log("task3",getArtistByIndex(artists,0));
   
   /**
 
@@ -242,18 +243,19 @@ function getArtistByIndex(array, index) {
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an 
 array with names of artists who lived in the 20th century (1900-2000) */
 // google split and 19
-function get20s(century){
-    var res = century.slice(0,2);
+function get20s(array){
+    //var res = century.slice(0,2);
     //console.log(res);
-    for( var i =0; i < artists.length-1; i++){
-      var selt = artists[i].years.slice(0,2);
+    let arraynew =[];
+    for( var i =0; i < array.length; i++){
+      //var selt = artists[i].years.slice(0,2);
       //console.log(selt);
-      if(selt ===res){
-        return artists[i].name;
+      if(array[i].years.includes('19') ){
+         arraynew.push(array[i].name);
 
     }
-  }
-} console.log(get20s("1900 -2000"));
+  } return arraynew;
+} console.log("task4",get20s(artists));
 
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
@@ -274,7 +276,7 @@ function removeArtist(array, index) {
   return array.splice(index,1);
     
   
-} console.log(removeArtist(artists, null));
+} console.log("task5",removeArtist(artists, null));
   /**
 
 
@@ -312,12 +314,13 @@ and returns an array with names of artists who painted more than 100 paintings.
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
 function lotsOfArt(arr){
-  for( var i =0 ; i<arr.length-1; i++){
+  var newarr = [];
+  for( var i =0 ; i<arr.length; i++){
     if(arr[i].paintings>100){
-      return arr[i].name;
+      newarr.push(arr[i].name);
     }
   }
-
+return newarr;
 
 } console.log(lotsOfArt(artists));
 
